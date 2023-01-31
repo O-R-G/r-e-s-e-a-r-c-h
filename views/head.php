@@ -57,8 +57,8 @@ $card_src = '://' . $site_url_info['host'] . $card_src . '?raw=true';
 	    <meta property="og:url" content="<?php echo $site_url; ?>">
 	    <meta property="og:title" content="<? echo $site; ?>">
 	    <meta property="og:description" content="<?php echo $description; ?>">
-	    <meta property="og:image" content="<?php echo $card_src_http; ?>">
-	    <meta property="og:image:secure_url" content="<?php echo $card_src_https; ?>">
+	    <meta property="og:image" content="<?php echo $card_src; ?>">
+	    
 	    <!-- Twitter --> 
 	    <meta name="twitter:card" content="summary_large_image">
 	    <meta name="twitter:url" content="<?php echo $site_url; ?>">
