@@ -62,7 +62,7 @@ $card_src_https = 'https' . $card_src;
 	    <meta name="twitter:url" content="<?php echo $site_url; ?>">
 	    <meta name="twitter:title" content="<? echo $site; ?>">
 	    <meta name="twitter:description" content="<?php echo $description; ?>">
-	    <meta name="twitter:image" content="<?php echo $card_src_https; ?>">
+	    <meta name="twitter:image" content="<?php echo $card_src_http; ?>">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
