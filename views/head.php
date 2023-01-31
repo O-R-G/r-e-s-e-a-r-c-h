@@ -58,14 +58,14 @@ var_dump($card_src_https);
 	    <meta property="og:url" content="<?php echo $site_url; ?>">
 	    <meta property="og:title" content="<? echo $site; ?>">
 	    <meta property="og:description" content="<?php echo $description; ?>">
-	    <meta property="og:image" content="<?php echo $card_src; ?>">
-	    <meta property="og:image:secure_url" content="<?php echo $site_url . $card_src; ?>">
+	    <meta property="og:image" content="<?php echo $card_src_http; ?>">
+	    <meta property="og:image:secure_url" content="<?php echo $card_src_https; ?>">
 	    <!-- Twitter --> 
 	    <meta property="twitter:card" content="summary_large_image">
 	    <meta property="twitter:url" content="<?php echo $site_url; ?>">
 	    <meta property="twitter:title" content="<? echo $site; ?>">
 	    <meta property="twitter:description" content="<?php echo $description; ?>">
-	    <meta property="twitter:image" content="<?php echo $card_src; ?>">
+	    <meta property="twitter:image" content="<?php echo $card_src_https; ?>">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
