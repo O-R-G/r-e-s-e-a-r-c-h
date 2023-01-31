@@ -40,6 +40,12 @@ if( isset($item) && $item['id'] !== 0 && count($oo->media($item['id'])) > 0 )
 		}
 	}
 }
+$card_src = '://image.' . $site_url_info['host'] . $card_src;
+$card_src_http = 'http' . $card_src;
+$card_src_https = 'https' . $card_src;
+
+var_dump($card_src_http);
+var_dump($card_src_https);
 
 ?><!DOCTYPE html>
 <html lang="en">
