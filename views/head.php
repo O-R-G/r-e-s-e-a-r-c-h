@@ -41,10 +41,11 @@ if( isset($item) && $item['id'] !== 0 && count($oo->media($item['id'])) > 0 )
 	}
 }
 // $card_src = '://image.' . $site_url_info['host'] . $card_src . '?raw=true';
+// $card_src = '://' . $site_url_info['host'] . $card_src . '?raw=true';
 $card_src = '://' . $site_url_info['host'] . $card_src . '?raw=true';
 
-$card_src_http = 'http' . $card_src;
-$card_src_https = 'https' . $card_src;
+// $card_src_http = 'http' . $card_src;
+// $card_src_https = 'https' . $card_src;
 ?><!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -56,7 +57,7 @@ $card_src_https = 'https' . $card_src;
 	    <meta property="og:url" content="<?php echo $site_url; ?>">
 	    <meta property="og:title" content="<? echo $site; ?>">
 	    <meta property="og:description" content="<?php echo $description; ?>">
-	    <meta property="og:image:url" content="<?php echo $card_src_http; ?>">
+	    <meta property="og:image" content="<?php echo $card_src_http; ?>">
 	    <meta property="og:image:secure_url" content="<?php echo $card_src_https; ?>">
 	    <!-- Twitter --> 
 	    <meta name="twitter:card" content="summary_large_image">
