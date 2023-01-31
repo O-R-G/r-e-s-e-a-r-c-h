@@ -53,6 +53,7 @@ if( isset($item) && $item['id'] !== 0 && count($oo->media($item['id'])) > 0 )
 	    <meta property="og:title" content="<? echo $site; ?>">
 	    <meta property="og:description" content="<?php echo $description; ?>">
 	    <meta property="og:image" content="<?php echo $card_src; ?>">
+	    <meta property="og:image:secure_url" content="<?php echo $site_url . $card_src; ?>">
 	    <!-- Twitter --> 
 	    <meta property="twitter:card" content="summary_large_image">
 	    <meta property="twitter:url" content="<?php echo $site_url; ?>">
