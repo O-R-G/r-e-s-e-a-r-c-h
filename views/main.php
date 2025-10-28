@@ -59,7 +59,6 @@ else
 <script type="text/javascript" src="/static/js/windowfull.js"></script>	
 <script>
     const images = document.querySelectorAll('img:not(.prevent-windowfull):not(.prevent-screenfull)');
-	console.log(images);
 	if (screenfull.isEnabled) {
 		console.log('en');
 		new ScreenfullExtended(screenfull, document.getElementById('screenfull-container'), images);
