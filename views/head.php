@@ -35,6 +35,7 @@ if($uu->id) {
 		<title><? echo $site; ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="/static/css/screenfull-windowfull.css">
 		<link rel="stylesheet" href="/static/css/main.css">
 		<link rel="stylesheet" href="/static/css/sf-text.css">
 		<link rel="stylesheet" href="/static/css/sf-mono.css">

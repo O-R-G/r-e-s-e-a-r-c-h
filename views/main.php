@@ -19,7 +19,9 @@ else
 	$date = '';
 }
 
-?><div id='fullwindow'></div>
+?>
+<div id='screenfull-container'></div>
+<div id='fullwindow'></div>
 <section id="main">
 	<div id="breadcrumbs">
 		<ul class="nav-level">
@@ -27,6 +29,7 @@ else
 				if(!$uu->id) {
                     echo $home . '<a href="/about">&thinsp;*&nbsp;</a>';
 				} else {
+					$a_url = $a_url ?? '';
 				    ?><a href="/<?= $a_url; ?>"><?= $head; ?></a><?
 				}
 			?></li>
@@ -52,20 +55,16 @@ else
 </section>
 
 <script type="text/javascript" src="/static/js/screenfull.min.js"></script>	
+<script type="text/javascript" src="/static/js/screenfull-extend.js"></script>	
 <script type="text/javascript" src="/static/js/windowfull.js"></script>	
 <script>
-    var imgs = document.querySelectorAll('img,video');
-	var i;
-	var index;
-	for (i = 0; i < imgs.length; i++) {
-		if (screenfull.isEnabled) {
-    		imgs[i].addEventListener('click', function () {
-                screenfull.toggle(this);
-    		}, false);
-		} else {
-    		imgs[i].addEventListener('click', function () {
-                windowfull.toggle(this);
-    		}, false);
-        }
+    const images = document.querySelectorAll('img:not(.prevent-windowfull):not(.prevent-screenfull)');
+	console.log(images);
+	if (screenfull.isEnabled) {
+		console.log('en');
+		new ScreenfullExtended(screenfull, document.getElementById('screenfull-container'), images);
+	}	
+	else{
+		windowfull.init(document.getElementById('fullwindow'), images);
 	}
 </script>
